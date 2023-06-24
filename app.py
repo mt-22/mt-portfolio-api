@@ -8,7 +8,7 @@ from email_validator import validate_email, EmailNotValidError
 app = Flask(__name__)
 app.config.from_object(ApplicationConfig)
 mail = Mail(app)
-CORS(app, supports_credentials=True, resources={r"*": {"origins": "*"}})
+CORS(app, supports_credentials=True, resources={r"*": {"origins": "https://mt-portfolio-theta.vercel.app/"}})
 
 @app.route('/', methods=['GET'])
 def home():
@@ -40,6 +40,3 @@ Email: {email}
             "status": str(e)
         }), 401
 
-
-if __name__ == "__main__":
-    app.run(host="0.0.0", port="5000",debug=True)
