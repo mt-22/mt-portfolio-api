@@ -1,0 +1,6 @@
+flask
+flask-cors
+flask-mail
+uuid
+python-dotenv
+email-validator
