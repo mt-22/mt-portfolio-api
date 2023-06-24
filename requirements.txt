@@ -4,3 +4,4 @@ flask-mail
 uuid
 python-dotenv
 email-validator
+gunicorn
