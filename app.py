@@ -8,7 +8,7 @@ from email_validator import validate_email, EmailNotValidError
 app = Flask(__name__)
 app.config.from_object(ApplicationConfig)
 mail = Mail(app)
-CORS(app, supports_credentials=True, resources={r"*": {"origins": "marshalltaylor.org"}})
+CORS(app, supports_credentials=True, resources={r"*": {"origins": "https://marshalltaylor.org/*"}})
 # CORS(app, supports_credentials=True, resources={r"*": {"origins": "*"}})
 
 
